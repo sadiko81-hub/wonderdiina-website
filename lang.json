@@ -1,0 +1,44 @@
+{
+  "en": {
+    "nav-home": "Home",
+    "nav-shop": "Shop",
+    "nav-about": "About",
+    "nav-contact": "Contact",
+    "hero-sub": "Planners, prints & accessories that inspire your daily life ✨",
+    "hero-cta": "Shop the collection",
+    "featured": "My Creations",
+    "story-title": "A little story — Dina",
+    "story-body": "Wonderdiina is a small boho brand — handcrafted planners, mugs and little joyful items made with calm and care. Each piece is made to brighten a daily routine.",
+    "cart-title": "Your Cart",
+    "total": "Total",
+    "checkout-title": "Checkout"
+  },
+  "fr": {
+    "nav-home": "Accueil",
+    "nav-shop": "Boutique",
+    "nav-about": "À propos",
+    "nav-contact": "Contact",
+    "hero-sub": "Planners, impressions & accessoires qui inspirent votre quotidien ✨",
+    "hero-cta": "Découvrir la collection",
+    "featured": "Mes créations",
+    "story-title": "Une petite histoire — Dina",
+    "story-body": "Wonderdiina est une petite marque bohème — planners, mugs et petits objets faits avec calme et soin. Chaque pièce illumine le quotidien.",
+    "cart-title": "Votre panier",
+    "total": "Total",
+    "checkout-title": "Paiement"
+  },
+  "ar": {
+    "nav-home": "الرئيسية",
+    "nav-shop": "المتجر",
+    "nav-about": "حول",
+    "nav-contact": "اتصل",
+    "hero-sub": "منظمات ومطبوعات وإكسسوارات تُلهم يومك ✨",
+    "hero-cta": "تسوق الآن",
+    "featured": "إبداعاتي",
+    "story-title": "قصة صغيرة — دينا",
+    "story-body": "Wonderdiina علامة تجارية بوتيكية بعفوية بوهيمية — مفكرات، أكواب وأشياء صغيرة مصنوعة بحب وهدوء. كل قطعة تضيء روتينك اليومي.",
+    "cart-title": "سلة التسوق",
+    "total": "المجموع",
+    "checkout-title": "الدفع"
+  }
+}

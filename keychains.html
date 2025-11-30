@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keychains & Accessories | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">Keychains & Accessories</h1>
+      <p class="section-sub">Acrylic, boho and custom accessories to personalize your keys and gadgets.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card" data-id="keychain-acrylic">
+          <img src="assets/images/keychains/keychain-acrylic.jpg" alt="Acrylic Keychain">
+          <h3>Acrylic Keychain</h3>
+          <p class="desc small">Clear acrylic — printed on both sides.</p>
+          <div class="meta"><p class="price">25 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="keychain-boho">
+          <img src="assets/images/keychains/keychain-boho.jpg" alt="Boho Keychain">
+          <h3>Boho Keychain</h3>
+          <p class="desc small">Handmade charms and tassels attached to a metal ring.</p>
+          <div class="meta"><p class="price">30 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="phonecase-custom">
+          <img src="assets/images/keychains/phonecase-custom.jpg" alt="Custom Phone Case">
+          <h3>Custom Phone Case</h3>
+          <p class="desc small">Phone case prints for popular phone models.</p>
+          <div class="meta"><p class="price">70 – 150 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="pen-custom">
+          <img src="assets/images/keychains/pen-custom.jpg" alt="Personalized Pen">
+          <h3>Personalized Pen</h3>
+          <p class="desc small">Engraved or printed names on a metal pen.</p>
+          <div class="meta"><p class="price">8 – 20 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="badge-custom">
+          <img src="assets/images/keychains/badge-custom.jpg" alt="Custom Badge / Pin">
+          <h3>Custom Badge / Pin</h3>
+          <p class="desc small">Round or square enamel pins for events.</p>
+          <div class="meta"><p class="price">15 – 25 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <a class="chat-btn" href="https://wa.me/212600499120" target="_blank">💬</a>
+  <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+
+  <div id="cart-popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close-btn">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p class="popup-total">Total: <span id="cart-total">0.00</span> <span id="cart-currency">MAD</span></p>
+      <div class="popup-actions">
+        <a href="checkout.html" class="btn">Checkout</a>
+        <button class="btn-outline close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

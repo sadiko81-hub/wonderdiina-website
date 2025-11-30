@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mugs | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">Mugs</h1>
+      <p class="section-sub">Personalized mugs and coaster sets — perfect for gifts.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card" data-id="mug-white">
+          <img src="assets/images/mugs/mug-white.jpg" alt="White Mug">
+          <h3>White Mug</h3>
+          <p class="price">60 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="mug-custom">
+          <img src="assets/images/mugs/mug-custom.jpg" alt="Customized Mug">
+          <h3>Customized Mug</h3>
+          <p class="price">90 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="coaster-set">
+          <img src="assets/images/mugs/coaster-set.jpg" alt="Coaster Set">
+          <h3>Coaster Set (4 pcs)</h3>
+          <p class="price">50 – 100 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <a class="chat-btn" href="https://wa.me/212600499120" target="_blank">💬</a>
+  <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+
+  <div id="cart-popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close-btn">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p class="popup-total">Total: <span id="cart-total">0.00</span> <span id="cart-currency">MAD</span></p>
+      <div class="popup-actions">
+        <a href="checkout.html" class="btn">Checkout</a>
+        <button class="btn-outline close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Returns & Refunds — Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <footer>© 2025 Wonderdiina</footer>
+  </aside>
+
+  <main class="main">
+    <header class="page-header">
+      <div class="brand">Wonderdiina</div>
+      <div class="lang-wrap">
+        <select id="lang-select-returns" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+        </select>
+      </div>
+    </header>
+
+    <article class="content card">
+      <h1 id="r-title">Returns & Refunds</h1>
+
+      <section>
+        <h2 id="r-eligible-title">Eligible Returns</h2>
+        <p id="r-eligible-text">You may request a return within 7 days of receiving your order if the item is unused, in its original condition and packaging.</p>
+      </section>
+
+      <section>
+        <h2 id="r-custom-title">Custom & Personalized Items</h2>
+        <p id="r-custom-text">Custom-made or personalized items cannot be returned unless they are damaged or incorrect on arrival.</p>
+      </section>
+
+      <section>
+        <h2 id="r-damaged-title">Damaged or Defective Items</h2>
+        <p id="r-damaged-text">If an item arrives damaged, please email a photo to <a href="mailto:wonderdiina4@gmail.com">wonderdiina4@gmail.com</a> within 48 hours. We will replace or refund the item after verification.</p>
+      </section>
+
+      <section>
+        <h2 id="r-process-title">Return Process</h2>
+        <p id="r-process-text">Message us on Instagram or by email to request a return. Once approved, send the item back. Return shipping is the buyer's responsibility unless the return is due to our error.</p>
+      </section>
+    </article>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="terms.html">Terms</a> · <a href="returns.html">Returns</a> · <a href="privacy.html">Privacy</a>
+      </div>
+      <div class="contact-small">Email: <a href="mailto:wonderdiina4@gmail.com">wonderdiina4@gmail.com</a></div>
+    </footer>
+  </main>
+
+  <script>
+    const TRANSLATIONS_RETURNS = {
+      en: {
+        "r-title": "Returns & Refunds",
+        "r-eligible-title": "Eligible Returns",
+        "r-eligible-text": "You may request a return within 7 days of receiving your order if the item is unused, in its original condition and packaging.",
+        "r-custom-title": "Custom & Personalized Items",
+        "r-custom-text": "Custom-made or personalized items cannot be returned unless they are damaged or incorrect on arrival.",
+        "r-damaged-title": "Damaged or Defective Items",
+        "r-damaged-text": "If an item arrives damaged, please email a photo to <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a> within 48 hours. We will replace or refund the item after verification.",
+        "r-process-title": "Return Process",
+        "r-process-text": "Message us on Instagram or by email to request a return. Once approved, send the item back. Return shipping is the buyer's responsibility unless the return is due to our error."
+      },
+      fr: {
+        "r-title": "Retours et Remboursements",
+        "r-eligible-title": "Retours éligibles",
+        "r-eligible-text": "Vous pouvez demander un retour sous 7 jours après réception si l'article est inutilisé, en parfait état et dans son emballage d'origine.",
+        "r-custom-title": "Articles personnalisés",
+        "r-custom-text": "Les articles faits sur mesure ou personnalisés ne peuvent pas être retournés sauf s'ils sont endommagés ou incorrects à l'arrivée.",
+        "r-damaged-title": "Articles endommagés",
+        "r-damaged-text": "Si un article arrive endommagé, envoyez une photo à <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a> sous 48 heures. Nous remplacerons ou rembourserons après vérification.",
+        "r-process-title": "Processus de retour",
+        "r-process-text": "Contactez-nous sur Instagram ou par email pour demander un retour. Une fois approuvé, renvoyez l'article. Les frais de retour sont à la charge de l'acheteur sauf si l'erreur vient de notre côté."
+      },
+      ar: {
+        "r-title": "سياسة الإرجاع والاسترداد",
+        "r-eligible-title": "السلع المؤهلة للإرجاع",
+        "r-eligible-text": "يمكنك طلب إرجاع خلال 7 أيام من استلام الطلب إذا كانت السلعة غير مستخدمة وفي حالتها الأصلية وتغليفها.",
+        "r-custom-title": "المنتجات المخصصة",
+        "r-custom-text": "لا يمكن إرجاع المنتجات المخصصة أو المطبوعة حسب الطلب إلا إذا وصلت تالفة أو خاطئة.",
+        "r-damaged-title": "المنتجات التالفة",
+        "r-damaged-text": "إذا وصلت قطعة تالفة، أرسل صورة إلى <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a> خلال 48 ساعة. سنقوم بالاستبدال أو الاسترداد بعد التحقق.",
+        "r-process-title": "إجراء الإرجاع",
+        "r-process-text": "اتصلي بنا عبر إنستغرام أو البريد الإلكتروني لطلب الإرجاع. بعد الموافقة، أرسلي السلعة. تكاليف الشحن للعودة على المشتري ما لم تكن المشكلة من جانبنا."
+      }
+    };
+
+    function setLangReturns(lang){
+      Object.keys(TRANSLATIONS_RETURNS[lang]).forEach(k => {
+        const el = document.getElementById(k);
+        if(el) el.innerHTML = TRANSLATIONS_RETURNS[lang][k];
+      });
+      if(lang === 'ar'){ document.documentElement.dir = 'rtl'; document.body.style.textAlign = 'right'; }
+      else { document.documentElement.dir = 'ltr'; document.body.style.textAlign = 'left'; }
+      localStorage.setItem('wd_lang', lang);
+      document.getElementById('lang-select-returns').value = lang;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('wd_lang') || 'en';
+      setLangReturns(saved);
+      document.getElementById('lang-select-returns').addEventListener('change', e => setLangReturns(e.target.value));
+    });
+  </script>
+</body>
+</html>

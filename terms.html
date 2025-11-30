@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms & Conditions — Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="Wonderdiina logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <footer>© 2025 Wonderdiina</footer>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Language & header -->
+    <header class="page-header">
+      <div class="brand">Wonderdiina</div>
+      <div class="lang-wrap">
+        <select id="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <article class="content card">
+      <h1 id="title">Terms & Conditions</h1>
+
+      <section>
+        <h2 id="about-title">About Our Products</h2>
+        <p id="about-text">All items sold by Wonderdiina are handmade or custom-printed. Slight variations in color, texture or print placement are part of the natural charm of handmade goods.</p>
+      </section>
+
+      <section>
+        <h2 id="orders-title">Orders & Payment</h2>
+        <p id="orders-text">Orders are confirmed once payment is received. We accept secure payments including PayPal and card payments. Prices include applicable taxes unless otherwise noted.</p>
+      </section>
+
+      <section>
+        <h2 id="production-title">Production & Shipping</h2>
+        <p id="production-text">Most products are made to order: please allow 2–5 business days for production. Shipping time varies by destination and carrier. Wonderdiina is not responsible for customs delays.</p>
+      </section>
+
+      <section>
+        <h2 id="copyright-title">Intellectual Property</h2>
+        <p id="copyright-text">Designs, photos and illustrations on this site are the property of Wonderdiina and may not be reused without permission.</p>
+      </section>
+
+      <section>
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-text">Questions? Contact us at <a href="mailto:wonderdiina4@gmail.com">wonderdiina4@gmail.com</a> or on Instagram <a href="https://instagram.com/wonderdiina4" target="_blank">@wonderdiina4</a>.</p>
+      </section>
+    </article>
+
+    <!-- Footer links -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="terms.html">Terms</a> · <a href="returns.html">Returns</a> · <a href="privacy.html">Privacy</a>
+      </div>
+      <div class="contact-small">Email: <a href="mailto:wonderdiina4@gmail.com">wonderdiina4@gmail.com</a></div>
+    </footer>
+  </main>
+
+  <script>
+    // --- Translations for Terms page (EN / FR / AR) ---
+    const TRANSLATIONS_TERMS = {
+      en: {
+        title: "Terms & Conditions",
+        "about-title": "About Our Products",
+        "about-text": "All items sold by Wonderdiina are handmade or custom-printed. Slight variations in color, texture or print placement are part of the natural charm of handmade goods.",
+        "orders-title": "Orders & Payment",
+        "orders-text": "Orders are confirmed once payment is received. We accept secure payments including PayPal and card payments. Prices include applicable taxes unless otherwise noted.",
+        "production-title": "Production & Shipping",
+        "production-text": "Most products are made to order: please allow 2–5 business days for production. Shipping time varies by destination and carrier. Wonderdiina is not responsible for customs delays.",
+        "copyright-title": "Intellectual Property",
+        "copyright-text": "Designs, photos and illustrations on this site are the property of Wonderdiina and may not be reused without permission.",
+        "contact-title": "Contact",
+        "contact-text": "Questions? Contact us at <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a> or on Instagram <a href='https://instagram.com/wonderdiina4' target='_blank'>@wonderdiina4</a>."
+      },
+      fr: {
+        title: "Conditions générales",
+        "about-title": "À propos de nos produits",
+        "about-text": "Tous les articles vendus par Wonderdiina sont faits à la main ou imprimés sur mesure. De légères variations de couleur, de texture ou de position d'impression peuvent survenir — c'est le charme de l'artisanat.",
+        "orders-title": "Commandes et Paiement",
+        "orders-text": "Les commandes sont confirmées une fois le paiement reçu. Nous acceptons les paiements sécurisés (PayPal, cartes). Les prix comprennent les taxes applicables sauf indication contraire.",
+        "production-title": "Production et Livraison",
+        "production-text": "La plupart des produits sont fabriqués sur commande : comptez 2–5 jours ouvrables pour la production. Les délais de livraison dépendent du transporteur et du pays. Wonderdiina n'est pas responsable des retards douaniers.",
+        "copyright-title": "Propriété Intellectuelle",
+        "copyright-text": "Les designs, photos et illustrations de ce site appartiennent à Wonderdiina et ne peuvent être réutilisés sans autorisation.",
+        "contact-title": "Contact",
+        "contact-text": "Questions ? Contactez-nous à <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a> ou sur Instagram <a href='https://instagram.com/wonderdiina4' target='_blank'>@wonderdiina4</a>."
+      },
+      ar: {
+        title: "الشروط والأحكام",
+        "about-title": "عن منتجاتنا",
+        "about-text": "جميع المنتجات في Wonderdiina مصنوعة يدويًا أو مطبوعة حسب الطلب. قد تحدث اختلافات بسيطة في اللون أو الملمس أو مكان الطباعة — وهذا جزء من جمال الصنع اليدوي.",
+        "orders-title": "الطلبات والدفع",
+        "orders-text": "يتم تأكيد الطلبات عند استلام الدفع. نقبل طرق دفع آمنة مثل باي بال وبطاقات الائتمان. الأسعار تشمل الضرائب إن وُجدت ما لم يذكر خلاف ذلك.",
+        "production-title": "الإنتاج والشحن",
+        "production-text": "معظم المنتجات تُصنع عند الطلب: يرجى الانتظار 2–5 أيام عمل للإنتاج. تختلف مدة الشحن حسب الوجهة وشركة النقل. لا تتحمل Wonderdiina مسؤولية التأخير الجمركي.",
+        "copyright-title": "الملكية الفكرية",
+        "copyright-text": "التصاميم والصور والرسومات في هذا الموقع ملك لـ Wonderdiina ولا يجوز إعادة استخدامها دون إذن.",
+        "contact-title": "تواصل معنا",
+        "contact-text": "للاستفسار راسلينا على البريد: <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a> أو على إنستغرام <a href='https://instagram.com/wonderdiina4' target='_blank'>@wonderdiina4</a>."
+      }
+    };
+
+    // helper to set language content
+    function setLangTerms(lang){
+      const keys = Object.keys(TRANSLATIONS_TERMS[lang]);
+      keys.forEach(k => {
+        const el = document.getElementById(k);
+        if(el) el.innerHTML = TRANSLATIONS_TERMS[lang][k];
+      });
+      // set RTL for Arabic
+      if(lang === 'ar'){ document.documentElement.dir = 'rtl'; document.body.style.textAlign = 'right'; }
+      else { document.documentElement.dir = 'ltr'; document.body.style.textAlign = 'left'; }
+      localStorage.setItem('wd_lang', lang);
+      document.getElementById('lang-select').value = lang;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('wd_lang') || 'en';
+      setLangTerms(saved);
+      document.getElementById('lang-select').addEventListener('change', e => setLangTerms(e.target.value));
+    });
+  </script>
+</body>
+</html>

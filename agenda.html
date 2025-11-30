@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agenda & Notebooks | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">Agenda & Notebooks</h1>
+      <p class="section-sub">Planners, pocket notebooks & printed bookmarks — handmade with love.</p>
+
+      <div class="product-grid">
+
+        <!-- Agenda 2025 -->
+        <div class="product-card" data-id="agenda2025">
+          <img src="assets/images/agenda/agenda-2025.jpg" alt="Agenda 2025">
+          <h3>Agenda 2025</h3>
+          <p class="desc small">Monthly & weekly layouts — chic and travel-friendly.</p>
+          <div class="meta"><p class="price">120 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <!-- Notebook A5 -->
+        <div class="product-card" data-id="notebook-a5">
+          <img src="assets/images/agenda/notebook-a5.jpg" alt="Notebook A5">
+          <h3>Notebook A5</h3>
+          <p class="desc small">Soft cover, 80 pages — perfect for notes.</p>
+          <div class="meta"><p class="price">45 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <!-- Spiral Planner -->
+        <div class="product-card" data-id="spiral-planner">
+          <img src="assets/images/agenda/spiral-planner.jpg" alt="Spiral Planner">
+          <h3>Spiral Planner</h3>
+          <p class="desc small">Easy-flat binding for notes on the go.</p>
+          <div class="meta"><p class="price">75 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <!-- Pocket A6 -->
+        <div class="product-card" data-id="pocket-a6">
+          <img src="assets/images/agenda/pocket-agenda.jpg" alt="Pocket Agenda">
+          <h3>Pocket Agenda / Notebook (A6)</h3>
+          <p class="desc small">Compact & cute — fits any bag.</p>
+          <div class="meta"><p class="price">45 – 50 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <!-- Bookmark -->
+        <div class="product-card" data-id="bookmark-custom">
+          <img src="assets/images/agenda/bookmark-custom.jpg" alt="Custom Bookmark">
+          <h3>Custom Bookmark (Printed)</h3>
+          <p class="desc small">Personalize it with your name or quote.</p>
+          <div class="meta"><p class="price">5 – 15 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Buttons -->
+  <a class="chat-btn" href="https://wa.me/212600499120" target="_blank">💬</a>
+  <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+
+  <!-- Cart Popup -->
+  <div id="cart-popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close-btn">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p class="popup-total">Total: <span id="cart-total">0.00</span> <span id="cart-currency">MAD</span></p>
+      <div class="popup-actions">
+        <a href="checkout.html" class="btn">Checkout</a>
+        <button class="btn-outline close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Packages | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">Packages</h1>
+      <p class="section-sub">Bundles that give more value with a beautiful presentation.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card" data-id="gift-pack">
+          <img src="assets/images/packages/gift-pack.jpg" alt="Gift Pack">
+          <h3>Gift Pack (Mug + Notebook)</h3>
+          <p class="desc small">Perfect for birthdays & celebrations.</p>
+          <div class="meta"><p class="price">140 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="deluxe-pack">
+          <img src="assets/images/packages/deluxe-pack.jpg" alt="Deluxe Pack">
+          <h3>Deluxe Pack (Notebook + Keychain + Stickers)</h3>
+          <p class="desc small">A complete creative set.</p>
+          <div class="meta"><p class="price">160 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="office-pack">
+          <img src="assets/images/packages/office-pack.jpg" alt="Office Pack">
+          <h3>Office Pack (Pen + Notepad + Mousepad)</h3>
+          <p class="desc small">Elegant & functional for everyday office use.</p>
+          <div class="meta"><p class="price">100 – 150 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <a class="chat-btn" href="https://wa.me/212600499120" target="_blank">💬</a>
+  <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+
+  <div id="cart-popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close-btn">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p class="popup-total">Total: <span id="cart-total">0.00</span> <span id="cart-currency">MAD</span></p>
+      <div class="popup-actions">
+        <a href="checkout.html" class="btn">Checkout</a>
+        <button class="btn-outline close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

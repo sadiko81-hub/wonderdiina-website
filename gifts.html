@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gifts & Decor | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">Gifts & Decor</h1>
+      <p class="section-sub">Unique home and office gifts — personalized and handmade.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card" data-id="giftbox-small">
+          <img src="assets/images/gifts/giftbox-small.jpg" alt="Gift Box Small">
+          <h3>Gift Box Small</h3>
+          <p class="desc small">Perfect for special occasions and mini surprises.</p>
+          <div class="meta"><p class="price">80 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="frame-mini">
+          <img src="assets/images/gifts/frame-mini.jpg" alt="Mini Frame">
+          <h3>Mini Frame / Magnet Frame</h3>
+          <p class="desc small">Cute décor piece for desks & fridges.</p>
+          <div class="meta"><p class="price">50 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="stickers-pack">
+          <img src="assets/images/gifts/stickers-pack.jpg" alt="Sticker Pack">
+          <h3>Stickers (Sheet/Pack)</h3>
+          <p class="desc small">High-quality vinyl stickers — customizable.</p>
+          <div class="meta"><p class="price">60 – 150 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="bottle-custom">
+          <img src="assets/images/gifts/bottle-custom.jpg" alt="Custom Bottle">
+          <h3>Customized Water Bottle / Flask</h3>
+          <p class="desc small">Insulated — keeps drinks hot or cold for hours.</p>
+          <div class="meta"><p class="price">100 – 180 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="mousepad-custom">
+          <img src="assets/images/gifts/mousepad-custom.jpg" alt="Custom Mousepad">
+          <h3>Custom Mousepad</h3>
+          <p class="desc small">Smooth surface — perfect for office and gaming.</p>
+          <div class="meta"><p class="price">40 – 70 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="desk-calendar">
+          <img src="assets/images/gifts/desk-calendar.jpg" alt="Desk Calendar">
+          <h3>Desk Calendar (A5/A4)</h3>
+          <p class="desc small">Minimal design — perfect for workspaces.</p>
+          <div class="meta"><p class="price">70 – 120 MAD</p></div>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <a class="chat-btn" href="https://wa.me/212600499120" target="_blank">💬</a>
+  <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+
+  <div id="cart-popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close-btn">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p class="popup-total">Total: <span id="cart-total">0.00</span> <span id="cart-currency">MAD</span></p>
+      <div class="popup-actions">
+        <a href="checkout.html" class="btn">Checkout</a>
+        <button class="btn-outline close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

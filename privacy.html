@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <footer>© 2025 Wonderdiina</footer>
+  </aside>
+
+  <main class="main">
+    <header class="page-header">
+      <div class="brand">Wonderdiina</div>
+      <div class="lang-wrap">
+        <select id="lang-select-privacy" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+        </select>
+      </div>
+    </header>
+
+    <article class="content card">
+      <h1 id="p-title">Privacy Policy</h1>
+
+      <section>
+        <h2 id="p-data-title">Data We Collect</h2>
+        <p id="p-data-text">When you place an order, we collect your name, address, email and payment details (processed securely by third parties) to fulfill your order.</p>
+      </section>
+
+      <section>
+        <h2 id="p-use-title">How We Use Your Data</h2>
+        <p id="p-use-text">We use your information to process orders, reply to inquiries, and improve our service. We do not sell personal data to third parties.</p>
+      </section>
+
+      <section>
+        <h2 id="p-security-title">Payment Security</h2>
+        <p id="p-security-text">Payments are processed through trusted providers; Wonderdiina does not store raw card details. For PayPal payments, follow PayPal's privacy policies.</p>
+      </section>
+
+      <section>
+        <h2 id="p-rights-title">Your Rights</h2>
+        <p id="p-rights-text">You can request access, correction or deletion of your personal data by emailing <a href="mailto:wonderdiina4@gmail.com">wonderdiina4@gmail.com</a>.</p>
+      </section>
+    </article>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="terms.html">Terms</a> · <a href="returns.html">Returns</a> · <a href="privacy.html">Privacy</a>
+      </div>
+      <div class="contact-small">Email: <a href="mailto:wonderdiina4@gmail.com">wonderdiina4@gmail.com</a></div>
+    </footer>
+  </main>
+
+  <script>
+    const TRANSLATIONS_PRIVACY = {
+      en: {
+        "p-title": "Privacy Policy",
+        "p-data-title": "Data We Collect",
+        "p-data-text": "When you place an order, we collect your name, address, email and payment details (processed securely by third parties) to fulfill your order.",
+        "p-use-title": "How We Use Your Data",
+        "p-use-text": "We use your information to process orders, reply to inquiries, and improve our service. We do not sell personal data to third parties.",
+        "p-security-title": "Payment Security",
+        "p-security-text": "Payments are processed through trusted providers; Wonderdiina does not store raw card details. For PayPal payments, follow PayPal's privacy policies.",
+        "p-rights-title": "Your Rights",
+        "p-rights-text": "You can request access, correction or deletion of your personal data by emailing <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a>."
+      },
+      fr: {
+        "p-title": "Politique de confidentialité",
+        "p-data-title": "Données collectées",
+        "p-data-text": "Lorsque vous passez une commande, nous collectons votre nom, adresse, e-mail et informations de paiement (traitées de manière sécurisée par des tiers) pour traiter votre commande.",
+        "p-use-title": "Usage des données",
+        "p-use-text": "Nous utilisons vos informations pour traiter les commandes, répondre aux demandes et améliorer notre service. Nous ne vendons pas de données personnelles à des tiers.",
+        "p-security-title": "Sécurité des paiements",
+        "p-security-text": "Les paiements sont traités via des prestataires de confiance ; Wonderdiina ne conserve pas les données brutes des cartes. Pour les paiements PayPal, consultez la politique de PayPal.",
+        "p-rights-title": "Vos droits",
+        "p-rights-text": "Vous pouvez demander l'accès, la correction ou la suppression de vos données personnelles en envoyant un email à <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a>."
+      },
+      ar: {
+        "p-title": "سياسة الخصوصية",
+        "p-data-title": "المعلومات التي نجمعها",
+        "p-data-text": "عند إجراء طلب، نجمع اسمك وعنوانك وبريدك الإلكتروني ومعلومات الدفع (تتم معالجتها بأمان عبر طرف ثالث) لتنفيذ الطلب.",
+        "p-use-title": "كيفية استخدام البيانات",
+        "p-use-text": "نستخدم معلوماتك لمعالجة الطلبات والرد على الاستفسارات وتحسين خدماتنا. لا نقوم ببيع البيانات الشخصية لطرف ثالث.",
+        "p-security-title": "أمان الدفع",
+        "p-security-text": "تتم معالجة المدفوعات عبر مزودين موثوقين؛ لا تحتفظ Wonderdiina ببيانات البطاقة المباشرة. بالنسبة لمدفوعات باي بال، اتطلع على سياسات باي بال.",
+        "p-rights-title": "حقوقك",
+        "p-rights-text": "يمكنك طلب الوصول أو التصحيح أو حذف بياناتك الشخصية عبر البريد: <a href='mailto:wonderdiina4@gmail.com'>wonderdiina4@gmail.com</a>."
+      }
+    };
+
+    function setLangPrivacy(lang){
+      Object.keys(TRANSLATIONS_PRIVACY[lang]).forEach(k => {
+        const el = document.getElementById(k);
+        if(el) el.innerHTML = TRANSLATIONS_PRIVACY[lang][k];
+      });
+      if(lang === 'ar'){ document.documentElement.dir = 'rtl'; document.body.style.textAlign = 'right'; }
+      else { document.documentElement.dir = 'ltr'; document.body.style.textAlign = 'left'; }
+      localStorage.setItem('wd_lang', lang);
+      document.getElementById('lang-select-privacy').value = lang;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('wd_lang') || 'en';
+      setLangPrivacy(saved);
+      document.getElementById('lang-select-privacy').addEventListener('change', e => setLangPrivacy(e.target.value));
+    });
+  </script>
+</body>
+</html>

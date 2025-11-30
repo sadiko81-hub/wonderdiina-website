@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="section checkout">
+      <h1 class="section-title" data-key="checkout-title">Checkout</h1>
+
+      <div class="checkout-box">
+        <ul id="checkout-list"></ul>
+        <p class="checkout-total">Total: <strong id="checkout-total">0.00</strong> <span id="checkout-currency">MAD</span></p>
+
+        <!-- PayPal.me redirect using your PayPal.me link
+             We build a link with amount & currency so buyer lands on PayPal with amount prefilled. -->
+        <a id="paypal-pay" class="btn paypal" target="_blank" rel="noopener">Pay with PayPal</a>
+
+        <p class="note">Or copy this link to pay manually: <br><code>https://www.paypal.me/incaprint25</code></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

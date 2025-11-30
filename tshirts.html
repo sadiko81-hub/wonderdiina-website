@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>T-Shirts & Apparel | Wonderdiina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">T-Shirts & Apparel</h1>
+      <p class="section-sub">Oversize tees, printed shirts, custom hoodies & accessories.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card" data-id="tshirt-oversize">
+          <img src="assets/images/tshirts/tshirt-oversize.jpg" alt="Oversize T-shirt">
+          <h3>Oversize T-shirt</h3>
+          <p class="price">120 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="tshirt-printed">
+          <img src="assets/images/tshirts/tshirt-printed.jpg" alt="Printed T-shirt">
+          <h3>Printed T-shirt</h3>
+          <p class="price">140 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="hoodie-custom">
+          <img src="assets/images/tshirts/hoodie-custom.jpg" alt="Custom Hoodie">
+          <h3>Custom Hoodie</h3>
+          <p class="price">200 – 350 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="cap-custom">
+          <img src="assets/images/tshirts/cap-custom.jpg" alt="Custom Cap">
+          <h3>Custom Cap</h3>
+          <p class="price">80 – 150 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="tote-bag">
+          <img src="assets/images/tshirts/tote-bag.jpg" alt="Tote Bag">
+          <h3>Personalized Tote Bag</h3>
+          <p class="price">16 – 30 MAD</p>
+          <div class="card-actions">
+            <button class="btn-buy">Add to cart</button>
+            <button class="btn-outline">Quick view</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <a class="chat-btn" href="https://wa.me/212600499120" target="_blank">💬</a>
+  <button id="open-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+
+  <div id="cart-popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close-btn">✕</button>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p class="popup-total">Total: <span id="cart-total">0.00</span> <span id="cart-currency">MAD</span></p>
+      <div class="popup-actions">
+        <a href="checkout.html" class="btn">Checkout</a>
+        <button class="btn-outline close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
