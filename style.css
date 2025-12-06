@@ -118,17 +118,7 @@ body{
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
 /* responsive */
-@media (max-width:900px){
-  .sidebar{width:72px;padding:18px}
-  .main{margin-left:92px;padding:18px}
-  .brand-name{display:none}
-  .workspace img{max-width:46%}
-}
-@media (max-width:520px){
-  .hero{height:48vh}
-  .workspace img{display:none}
-  .product-grid{grid-template-columns:repeat(2,1fr)}
-}
+
 /* ============================
    Gallery + Large product card styles
    (Append to end of style.css)
@@ -291,4 +281,131 @@ body{
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+/* =========================
+   ✅ FULL MOBILE FIX
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 70px;
+    padding: 14px 10px;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .main {
+    margin-left: 90px;
+    padding: 16px;
+  }
+
+  .workspace img {
+    max-width: 45%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+/* 📱 REAL MOBILE PHONES */
+@media (max-width: 600px) {
+
+  /* ✅ SIDEBAR BECOMES TOP BAR */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: var(--bg);
+  }
+
+  .sidebar-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 52px;
+  }
+
+  .brand-name {
+    display: block;
+    font-size: 20px;
+  }
+
+  .main-nav {
+    display: none; /* hides menu links on mobile */
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  /* ✅ MAIN FULL WIDTH */
+  .main {
+    margin-left: 0;
+    padding: 14px;
+    max-width: 100%;
+  }
+
+  /* ✅ HERO SMALLER */
+  .hero {
+    height: 42vh;
+    border-radius: 12px;
+  }
+
+  /* ✅ PRODUCTS PERFECT MOBILE GRID */
+  .product-grid,
+  .section .product-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .product-main {
+    height: 180px;
+  }
+
+  .product-thumb {
+    height: 42px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  /* ✅ STORY IMAGE HIDDEN */
+  .workspace img {
+    display: none;
+  }
+
+  /* ✅ FOOTER STACKED */
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  /* ✅ FLOATING BUTTONS FIX */
+  .chat-btn {
+    right: 12px;
+    bottom: 80px;
+  }
+
+  .cart-btn {
+    right: 12px;
+    bottom: 16px;
+  }
+
 }
