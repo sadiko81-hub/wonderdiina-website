@@ -386,9 +386,9 @@ body{
   }
 
   /* ✅ STORY IMAGE HIDDEN */
-   .hero{height:48vh}
-  .product-grid{grid-template-columns:repeat(2,1fr)}
-}
+  .workspace img {
+    display: none;
+  }
 
   /* ✅ FOOTER STACKED */
   .site-footer {
@@ -408,4 +408,9 @@ body{
     bottom: 16px;
   }
 
+}
+.product-link{
+  text-decoration:none;
+  color:inherit;
+  display:block;
 }
