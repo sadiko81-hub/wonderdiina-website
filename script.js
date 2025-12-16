@@ -441,3 +441,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 })();
+/* =========================
+   STEP 4 — Click image = add to cart (Packages)
+   ========================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.product-card img').forEach(img => {
+    img.style.cursor = 'pointer';
+
+    img.addEventListener('click', () => {
+      const card = img.closest('.product-card');
+      if (!card) return;
+
+      const productId = card.dataset.id;
+      if (!productId) return;
+
+      // Add to cart using your existing logic
+      if (typeof addToCartById === 'function') {
+        addToCartById(productId, 1);
+        showCartPopup();
+      }
+    });
+  });
+});
