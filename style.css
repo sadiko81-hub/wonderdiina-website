@@ -314,16 +314,14 @@ body{
 /* 📱 REAL MOBILE PHONES */
 @media (max-width: 600px) {
 
-  /* ✅ SIDEBAR BECOMES TOP BAR */
+  /* ✅ TOP BAR */
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     padding: 10px 12px;
-    background: var(--bg);
   }
 
   .sidebar-top {
@@ -333,25 +331,76 @@ body{
   }
 
   .logo {
-    width: 52px;
+    width: 48px;
   }
 
   .brand-name {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .main-nav {
-    display: none; /* hides menu links on mobile */
-  }
-
-  .controls {
-    display: none;
-  }
-
+  .main-nav,
+  .controls,
   .sidebar-footer {
     display: none;
   }
+
+  /* ✅ MAIN CONTENT */
+  .main {
+    margin-left: 0;
+    padding: 12px;
+  }
+
+  /* ✅ PRODUCTS = 1 COLUMN */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* ✅ BUTTONS */
+  .add-btn,
+  .buy-btn,
+  .btn-buy {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* ✅ GALLERY FIX */
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery-thumbs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .gallery-thumbs img {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+
+  /* ✅ CART POPUP */
+  .popup {
+    width: 95%;
+    max-width: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
   /* ✅ MAIN FULL WIDTH */
   .main {
