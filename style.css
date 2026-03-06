@@ -451,3 +451,12 @@ input, textarea {
   gap: 30px;
   margin-bottom: 40px;
 }
+nav {
+    margin-bottom: 25px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
