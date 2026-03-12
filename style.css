@@ -460,3 +460,10 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+.navbar {
+  margin-top: 20px;
+}
+
+.section {
+  margin-top: 40px;
+}
