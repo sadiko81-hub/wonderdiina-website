@@ -29,30 +29,28 @@
       <h2>Contact Wonderdiina</h2>
       <p>We’d love to hear from you! Please fill in the form below or reach us directly 💌</p>
 
-      <form class="contact-form" action="https://formspree.io/f/xaqllqll" method="POST" onsubmit="redirectAfterSubmit()"></form>
+      <form class="contact-form" action="https://formspree.io/f/xaqllqll" method="POST">
 
   <input type="hidden" name="_next" value="https://sadiko81-hub.github.io/wonderdiina-website/thank-you.html">
 
+  <label>Name</label>
   <input type="text" name="name" placeholder="Your name" required>
+
+  <label>Email</label>
   <input type="email" name="email" placeholder="Your email" required>
+
+  <label>Message</label>
   <textarea name="message" required></textarea>
 
   <button type="submit">Send Message</button>
 
 </form>
-
       <div class="contact-info">
         <p>📧 Email: <a href="mailto:wonderdiina@gmail.com">wonderdiina@gmail.com</a></p>
         WhatsApp: <a href="https://wa.me/212600499120">+212 6 00 49 91 20</a>
       </div>
     </section>
   </main>
-  <script>
-    function redirectAfterSubmit() {
-      setTimeout(function() {
-        window.location.href = "thank-you.html";
-      }, 500);
-    }
-  </script>
+  
 </body>
 </html>
