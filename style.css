@@ -488,9 +488,53 @@ nav a {
   border-radius: 16px;
   padding: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+}
+body {
+  background-color: #fdfaf6;
+}
+
+.section-title {
+  color: #6b4f3b;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}.btn-buy {
+  background-color: #000;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-buy:hover {
+  background-color: #333;
 }
