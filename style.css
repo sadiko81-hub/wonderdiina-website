@@ -469,11 +469,28 @@ nav a {
 }
 .btn-whatsapp {
   display: inline-block;
-  background-color: #25D366;
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
   color: white;
-  padding: 12px 18px;
-  border-radius: 8px;
+  padding: 12px 20px;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
